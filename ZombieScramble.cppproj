@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{04b6dc77-6cfa-4438-88bc-82a41819835c}</ProjectGuid>
+    <avrdevice>ATSAM3X8E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>ZombieScramble</AssemblyName>
+    <Name>ZombieScramble</Name>
+    <RootNamespace>ZombieScramble</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.36.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>F_CPU={build.f_cpu}</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>ARDUINO_ESP8266_GENERIC</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../ZombieScramble - Final</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/Wire</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/ArduinoJson/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/variants/generic</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>F_CPU={build.f_cpu}</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>ARDUINO_ESP8266_GENERIC</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../ZombieScramble - Final</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/Wire</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/ArduinoJson/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/variants/generic</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samd21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../ZombieScramble;C:/Program Files (x86)/Arduino/libraries;C:/Users/quark/Documents/Arduino/libraries;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/avr;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/libb64;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/spiffs;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/umm_malloc;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/variants/generic;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/include;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip/include;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/libc/xtensa-lx106-elf/include;C:/Users/quark/AppData/Local/Temp/VMBuilds/ZombieScramble/esp8266_generic/Release/core;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/quark/Documents/Arduino/libraries/Adafruit_NeoPixel;C:/Users/quark/Documents/Arduino/libraries/Painless_Mesh/src;C:/Users/quark/AppData/Local/Temp/VMBuilds/ZombieScramble/esp8266_generic/Debug/core;{build.path}/core;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip2/include;C:/Users/quark/Documents/Arduino/libraries/TaskScheduler-master/src;C:/Users/quark/Documents/Arduino/libraries/ArduinoJson/src;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WiFi/src;C:/Users/quark/Documents/Arduino/libraries/ESPAsyncTCP-master/src;../../../ZombieScramble-NoMesh;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266HTTPClient/src;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WebServer/src;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/Wire;C:/Users/quark/Documents/Arduino/libraries/extEEPROM;../../../ZombieScramble - Final;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <custom_esp8266_generic_FlashSize>1M0</custom_esp8266_generic_FlashSize>
+        <arduino.upload.port>COM12</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>F_CPU={build.f_cpu}</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>ARDUINO_ESP8266_GENERIC</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../ZombieScramble - Final</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/Wire</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/ArduinoJson/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/variants/generic</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>F_CPU={build.f_cpu}</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>ARDUINO_ESP8266_GENERIC</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../ZombieScramble - Final</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/Wire</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries/ArduinoJson/src</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Users/quark/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/avr</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/libb64</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/variants/generic</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samd21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../ZombieScramble;C:/Program Files (x86)/Arduino/libraries;C:/Users/quark/Documents/Arduino/libraries;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/avr;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/libb64;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/spiffs;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/cores/esp8266/umm_malloc;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/variants/generic;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/include;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip/include;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/libc/xtensa-lx106-elf/include;C:/Users/quark/AppData/Local/Temp/VMBuilds/ZombieScramble/esp8266_generic/Release/core;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/quark/Documents/Arduino/libraries/Adafruit_NeoPixel;C:/Users/quark/Documents/Arduino/libraries/Painless_Mesh/src;C:/Users/quark/AppData/Local/Temp/VMBuilds/ZombieScramble/esp8266_generic/Debug/core;{build.path}/core;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/tools/sdk/lwip2/include;C:/Users/quark/Documents/Arduino/libraries/TaskScheduler-master/src;C:/Users/quark/Documents/Arduino/libraries/ArduinoJson/src;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WiFi/src;C:/Users/quark/Documents/Arduino/libraries/ESPAsyncTCP-master/src;../../../ZombieScramble-NoMesh;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266HTTPClient/src;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/ESP8266WebServer/src;C:/Users/quark/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.2/libraries/Wire;C:/Users/quark/Documents/Arduino/libraries/extEEPROM;../../../ZombieScramble - Final;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <custom_esp8266_generic_FlashSize>1M0</custom_esp8266_generic_FlashSize>
+        <arduino.upload.port>COM12</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="ZombieScramble.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utils.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Utils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.ZombieScramble - Final.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.ZombieScramble-NoMesh.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.ZombieScramble.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
